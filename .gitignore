@@ -10,8 +10,7 @@ credits.csv
 keywords.csv
 links.csv
 links_small.csv
-movies_metadata.csv
-ratings.csv
+
 
 # Add config.py
 config.py
