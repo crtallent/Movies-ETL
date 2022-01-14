@@ -28,21 +28,5 @@ def extract_transform_load():
     wiki_movies_df = pd.DataFrame(wiki_movies_raw)
     # 5. Return the three DataFrames
     return wiki_movies_df, kaggle_metadata, ratings
-    ```
-    
-2. Extracting and Transforming Wikipedia Data:
+     
 
-```
- # 6. Write a try-except block to catch errors while extracting the IMDb ID using a regular expression string and
-    #  dropping any imdb_id duplicates. If there is an error, capture and print the exception.
-try:    
-    wiki_movies_df['imdb_id'] = wiki_movies_df['imdb_link'].str.extract(r'(tt\d{7})')
-    wiki_movies_df.drop_duplicates(subset='imdb_id', inplace=True)
-
-except:
-    print("error found when extracting data")
-    
-wiki_movies_df.head()    
-
-print(len(wiki_movies_df))
-```
