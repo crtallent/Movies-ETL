@@ -60,5 +60,7 @@ pd.to_datetime(ratings['timestamp'], unit='s')
 ratings['timestamp'] = pd.to_datetime(ratings['timestamp'], unit='s')
 ```
 
+4. Creating the Movie Database:
 
+![movies_query.png](https://github.com/crtallent/Movies-ETL/blob/main/Resources/movies_query.png)
 
