@@ -64,3 +64,5 @@ ratings['timestamp'] = pd.to_datetime(ratings['timestamp'], unit='s')
 
 ![movies_query.png](https://github.com/crtallent/Movies-ETL/blob/main/Resources/movies_query.png)
 
+![ratings_query.png](https://github.com/crtallent/Movies-ETL/blob/main/Resources/ratings_query.png)
+
