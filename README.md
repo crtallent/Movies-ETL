@@ -47,5 +47,18 @@ wiki_movies_df.head()
 print(len(wiki_movies_df))
 ```
 
+3. Extracting and Transforming Kaggle Data:
+
+```
+# 2. Clean the Kaggle metadata.
+kaggle_metadata['video'] = kaggle_metadata['video'] == 'True'
+kaggle_metadata['budget'] = kaggle_metadata['budget'].astype(int)
+kaggle_metadata['id'] = pd.to_numeric(kaggle_metadata['id'], errors='raise')
+kaggle_metadata['popularity'] = pd.to_numeric(kaggle_metadata['popularity'], errors='raise')
+kaggle_metadata['release_date'] = pd.to_datetime(kaggle_metadata['release_date'])
+pd.to_datetime(ratings['timestamp'], unit='s')
+ratings['timestamp'] = pd.to_datetime(ratings['timestamp'], unit='s')
+```
+
 
 
